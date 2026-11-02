@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<script>document.documentElement.className+=' js'</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Assessoria Jurídica no Paraguai: Visto, Cédula, CNH e RUC | GM Advocacia</title>
 <meta name="description" content="Regularize sua documentação no Paraguai com advogado: visto, cédula paraguaia, CNH, abertura de empresa (RUC) e conta bancária. Acompanhamento na Imigração. Fale no WhatsApp.">
@@ -147,7 +148,7 @@ h1,h2,h3{font-family:var(--serif);line-height:1.08;font-weight:600}
 /* seções */
 section{padding:96px 0}
 .head{max-width:700px;margin-bottom:52px}
-.head h2{font-size:clamp(2rem,4vw,3.1rem);color:var(--green)}
+.head h2{font-size:clamp(2rem,4vw,3.1rem);color:var(--green);margin-bottom:14px}
 .head h2 em{color:var(--gold-dark);font-style:italic;font-weight:500}
 .head p{color:var(--muted)}
 
@@ -229,20 +230,29 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
 @keyframes pulse{70%{box-shadow:0 0 0 16px rgba(216,188,136,0)}100%{box-shadow:0 0 0 0 rgba(216,188,136,0)}}
 .sticky{display:none}
 
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
-.reveal.in{opacity:1;transform:none}
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-  .reveal{opacity:1;transform:none}
+  .js .reveal{opacity:1;transform:none}
 }
 
 /* responsivo */
 @media (max-width:980px){
   .cards{grid-template-columns:repeat(2,1fr)}
-  .hero .grid,.lead-grid{grid-template-columns:1fr;gap:48px}
-  .hero-photo{max-width:420px;margin-inline:auto}
+  .lead-grid{grid-template-columns:1fr;gap:40px}
+  .hero .grid{grid-template-columns:1.15fr .85fr;gap:40px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.2rem)}
+  .hero .lead{font-size:1.05rem}
+  .hero .actions .btn-lg{padding:17px 26px}
   .steps{grid-template-columns:1fr}
   .proof ul{grid-template-columns:repeat(2,1fr)}
+  footer{padding-bottom:96px}
+}
+@media (max-width:719px){
+  .hero .grid{grid-template-columns:1fr;gap:48px}
+  .hero-photo{max-width:420px;margin-inline:auto}
+  .hero h1{font-size:clamp(2.2rem,9vw,3rem)}
 }
 @media (max-width:640px){
   body{font-size:16px;padding-bottom:78px}
@@ -262,6 +272,8 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
   .final .btn{padding:16px 22px;font-size:.98rem}
   .form{padding:26px 20px}
   .fab{display:none}
+  .hide-sm{display:none}
+  footer{padding-bottom:40px}
   .sticky{display:block;position:fixed;inset:auto 0 0 0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(10,29,23,.96);backdrop-filter:blur(8px);border-top:1px solid rgba(216,188,136,.3)}
 }
 </style>
@@ -471,7 +483,7 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
     <div class="rule" style="margin-inline:auto"></div>
     <h2>Venha para cá. O que ainda está <em>esperando?</em></h2>
     <p>Fale com a nossa equipe, conheça os pacotes de serviços e dê o primeiro passo para regularizar a sua documentação no Paraguai.</p>
-    <a class="btn btn-wa btn-lg wa" href="https://wa.me/5562996191065" data-msg="Olá! Quero conferir os pacotes de serviços da GM Advocacia para o Paraguai." data-where="final"><svg aria-hidden="true"><use href="#wa"/></svg>Chamar no WhatsApp · (62) 99619-1065</a>
+    <a class="btn btn-wa btn-lg wa" href="https://wa.me/5562996191065" data-msg="Olá! Quero conferir os pacotes de serviços da GM Advocacia para o Paraguai." data-where="final"><svg aria-hidden="true"><use href="#wa"/></svg><span>Chamar no WhatsApp<span class="hide-sm"> · (62) 99619-1065</span></span></a>
   </div></div>
 </section>
 
