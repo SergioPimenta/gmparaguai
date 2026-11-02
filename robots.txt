@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gmescritorioadvocacia.com.br/paraguai/sitemap.xml
