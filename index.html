@@ -30,7 +30,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="assets/cedula-2.jpg" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
@@ -44,11 +43,11 @@
       "url": "https://gmescritorioadvocacia.com.br/",
       "logo": "https://gmescritorioadvocacia.com.br/paraguai/assets/logo.png",
       "image": "https://gmescritorioadvocacia.com.br/paraguai/assets/og.jpg",
-      "telephone": "+55-62-99619-1065",
+      "telephone": "+595-993-375460",
       "founder": { "@type": "Person", "name": "Glayson Moreira", "jobTitle": "Advogado" },
       "areaServed": [{ "@type": "Country", "name": "Brasil" }, { "@type": "Country", "name": "Paraguai" }],
       "knowsAbout": ["Visto paraguaio", "Cédula de identidade paraguaia", "CNH paraguaia", "Abertura de empresa no Paraguai (RUC)", "Conta bancária no Paraguai"],
-      "contactPoint": { "@type": "ContactPoint", "telephone": "+55-62-99619-1065", "contactType": "customer service", "availableLanguage": "Portuguese" }
+      "contactPoint": { "@type": "ContactPoint", "telephone": "+595-993-375460", "contactType": "customer service", "availableLanguage": "Portuguese" }
     },
     {
       "@type": "Service",
@@ -119,25 +118,20 @@ h1,h2,h3{font-family:var(--serif);line-height:1.08;font-weight:600}
 
 /* topo */
 .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;position:relative;z-index:5}
-.nav img{height:110px;width:auto;max-width:none}
+.nav img{height:84px;width:auto;max-width:none}
 .nav .btn{padding:11px 20px;font-size:.92rem}
 
 /* hero */
-.hero{background:radial-gradient(1200px 600px at 85% 20%,#1d4a3b 0%,transparent 60%),var(--green);color:var(--cream);padding:0 0 100px;position:relative;overflow:hidden}
-.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-top:50px}
-.hero h1{font-size:clamp(2.4rem,5vw,4.1rem);color:var(--cream)}
+.hero{background:linear-gradient(90deg,rgba(7,28,21,.94) 0%,rgba(7,28,21,.82) 30%,rgba(7,28,21,.35) 58%,rgba(7,28,21,0) 78%),linear-gradient(180deg,rgba(7,28,21,.55) 0,rgba(7,28,21,0) 22%),url(assets/hero-bg.webp) 70% 40%/cover no-repeat,var(--green);color:var(--cream);padding:0 0 64px;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:minmax(0,1fr);padding-top:8px}
+.hero h1{font-size:clamp(2.3rem,3.6vw,3.4rem);line-height:1.06;color:var(--cream);max-width:620px;text-shadow:0 2px 24px rgba(0,0,0,.35)}
 .hero h1 em{color:var(--gold-light);font-style:italic;font-weight:500}
-.hero .lead{font-size:1.15rem;color:#e0dac9;max-width:560px;margin:22px 0 22px}
-.ticks{list-style:none;display:grid;gap:10px;margin-bottom:32px}
+.hero .lead{color:#ece6d6;max-width:520px;margin:16px 0 18px;font-size:1.08rem;text-shadow:0 1px 14px rgba(0,0,0,.4)}
+.ticks{list-style:none;display:grid;gap:8px;margin-bottom:26px}
 .ticks li{display:flex;gap:12px;align-items:flex-start;color:#e8e2d2;font-size:1.02rem}
 .ticks li::before{content:"";flex:none;width:22px;height:22px;margin-top:2px;border-radius:50%;background:var(--gold) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f2a22' stroke-width='3.500' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.500l4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
 .hero .actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
-.micro{font-size:.86rem;color:#b9bfae;margin-top:14px}
-.hero-photo{position:relative}
-.hero-photo::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1.5px solid var(--gold);border-radius:220px 220px 24px 24px;opacity:.6}
-.hero-photo img{position:relative;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 60%;border-radius:220px 220px 24px 24px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
-.hero-photo .badge{position:absolute;left:-18px;bottom:36px;background:var(--cream);color:var(--green);padding:14px 20px;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.3);font-family:var(--serif);font-size:1.2rem;font-weight:600;line-height:1.15}
-.hero-photo .badge small{display:block;font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-dark);font-weight:500}
+.micro{font-size:.86rem;color:#cfd4c4;margin-top:14px}
 
 /* faixa de confiança */
 .proof{background:var(--cream-2);border-bottom:1px solid rgba(176,141,87,.25);padding:26px 0}
@@ -187,11 +181,15 @@ section{padding:96px 0}
 .gallery{background:var(--cream-2)}
 .shots{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .shots figure{position:relative;border-radius:18px;overflow:hidden;grid-column:span 2;aspect-ratio:3/4;background:var(--green)}
-.shots figure:nth-child(4){grid-column:2 / span 2}
-.shots figure:nth-child(5){grid-column:4 / span 2}
+.shots figure.post{aspect-ratio:1/1}
+.shots figure{cursor:zoom-in}
+.lightbox{position:fixed;inset:0;z-index:100;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(7,22,17,.92);cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(94vw,1000px);max-height:90vh;width:auto;height:auto;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.lightbox button{position:absolute;top:16px;right:18px;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(216,188,136,.6);background:transparent;color:var(--cream);font-size:1.6rem;line-height:1;cursor:pointer}
 .shots img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transition:transform .6s}
 .shots figure:hover img{transform:scale(1.05)}
-.shots figcaption{position:absolute;inset:auto 0 0 0;padding:44px 18px 16px;background:linear-gradient(transparent,rgba(15,42,34,.88));color:var(--cream);font-size:.92rem}
+.shots figure::after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:linear-gradient(transparent,rgba(15,42,34,.88));pointer-events:none}
 
 /* formulário */
 .lead-sec{background:radial-gradient(900px 500px at 10% 0%,#1d4a3b 0%,transparent 60%),var(--green);color:var(--cream)}
@@ -241,7 +239,7 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
 @media (max-width:980px){
   .cards{grid-template-columns:repeat(2,1fr)}
   .lead-grid{grid-template-columns:1fr;gap:40px}
-  .hero .grid{grid-template-columns:1.15fr .85fr;gap:40px}
+  .hero .grid{grid-template-columns:minmax(0,1fr)}
   .hero h1{font-size:clamp(2.2rem,5vw,3.2rem)}
   .hero .lead{font-size:1.05rem}
   .hero .actions .btn-lg{padding:17px 26px}
@@ -250,8 +248,8 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
   footer{padding-bottom:96px}
 }
 @media (max-width:719px){
+  .hero{background:linear-gradient(180deg,rgba(7,28,21,.88) 0%,rgba(7,28,21,.72) 55%,rgba(7,28,21,.55) 100%),url(assets/hero-bg.webp) 72% center/cover no-repeat,var(--green);min-height:0}
   .hero .grid{grid-template-columns:1fr;gap:48px}
-  .hero-photo{max-width:420px;margin-inline:auto}
   .hero h1{font-size:clamp(2.2rem,9vw,3rem)}
 }
 @media (max-width:640px){
@@ -263,9 +261,8 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
   .nav .btn{padding:10px 16px;font-size:.88rem}
   .cards,.trust .row{grid-template-columns:1fr}
   .shots{grid-template-columns:repeat(2,1fr)}
-  .shots figure,.shots figure:nth-child(4),.shots figure:nth-child(5){grid-column:auto}
-  .shots figure:nth-child(5){grid-column:1 / -1;aspect-ratio:4/3}
-  .hero-photo .badge{left:8px}
+  .shots figure{grid-column:auto}
+  .shots figure:nth-child(9){grid-column:1 / -1;aspect-ratio:4/3}
   .hero .actions .btn{width:100%}
   .final{padding:90px 0;background:linear-gradient(rgba(10,29,23,.88),rgba(15,42,34,.72)),url(assets/cidade.webp) 78% center/cover,var(--green)}
   .final .inner{width:100%}
@@ -286,12 +283,12 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
 
 <a class="sr skip" href="#servicos">Pular para o conteúdo</a>
 
-<div class="topbar">Atendimento pelo WhatsApp · <a href="https://wa.me/5562996191065" class="wa" data-msg="Olá! Vim pelo site e gostaria de falar sobre a assessoria no Paraguai." data-where="topbar">(62) 99619-1065</a></div>
+<div class="topbar">Atendimento pelo WhatsApp · <a href="https://wa.me/595993375460" class="wa" data-msg="Olá! Vim pelo site e gostaria de falar sobre a assessoria no Paraguai." data-where="topbar">+595 993 375460</a></div>
 
 <header class="hero">
   <div class="wrap nav">
     <a href="#" aria-label="Glayson Moreira Advogado"><img src="assets/logo.png" alt="Glayson Moreira Advogado" width="943" height="580"></a>
-    <a class="btn btn-wa wa" href="https://wa.me/5562996191065" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="header"><svg aria-hidden="true"><use href="#wa"/></svg>Falar no WhatsApp</a>
+    <a class="btn btn-wa wa" href="https://wa.me/595993375460" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="header"><svg aria-hidden="true"><use href="#wa"/></svg>Falar no WhatsApp</a>
   </div>
 
   <div class="wrap grid">
@@ -306,14 +303,10 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
         <li>Acompanhamento no Setor da Imigração e no banco</li>
       </ul>
       <div class="actions">
-        <a class="btn btn-wa btn-lg wa" href="https://wa.me/5562996191065" data-msg="Olá! Quero conhecer os pacotes de serviços para regularizar minha documentação no Paraguai." data-where="hero"><svg aria-hidden="true"><use href="#wa"/></svg>Quero conhecer os pacotes</a>
+        <a class="btn btn-wa btn-lg wa" href="https://wa.me/595993375460" data-msg="Olá! Quero conhecer os pacotes de serviços para regularizar minha documentação no Paraguai." data-where="hero"><svg aria-hidden="true"><use href="#wa"/></svg>Quero conhecer os pacotes</a>
         <a class="btn btn-line" href="#servicos">Ver serviços</a>
       </div>
       <p class="micro">Atendimento direto pelo WhatsApp, sem compromisso.</p>
-    </div>
-    <div class="hero-photo">
-      <img src="assets/cedula-2.jpg" width="1200" height="1600" fetchpriority="high" alt="Clientes da GM Advocacia mostrando a cédula paraguaia em frente à Dirección Nacional de Migraciones, em Ciudad del Este">
-      <div class="badge"><small>Resultado real</small>Cédula na mão,<br>direto da Imigração</div>
     </div>
   </div>
 </header>
@@ -343,25 +336,25 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2.200"/><path d="M6 16c.5-1.500 1.700-2.200 3-2.200s2.500.7 3 2.200M15 10h3M15 13h3"/></svg></div>
         <h3>Visto e Cédula paraguaia</h3>
         <p>Assessoria jurídica completa para obter o seu visto paraguaio e tirar a sua cédula de identidade.</p>
-        <a class="more wa" href="https://wa.me/5562996191065" data-msg="Olá! Tenho interesse no visto e na cédula paraguaia. Pode me orientar?" data-where="card-visto">Quero este serviço <span aria-hidden="true">→</span></a>
+        <a class="more wa" href="https://wa.me/595993375460" data-msg="Olá! Tenho interesse no visto e na cédula paraguaia. Pode me orientar?" data-where="card-visto">Quero este serviço <span aria-hidden="true">→</span></a>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16l1.500-5.200A2 2 0 0 1 8.400 9.400h7.200a2 2 0 0 1 1.900 1.400L19 16"/><rect x="3" y="16" width="18" height="3.500" rx="1.200"/><circle cx="7.500" cy="17.800" r=".6"/><circle cx="16.500" cy="17.800" r=".6"/></svg></div>
         <h3>CNH paraguaia</h3>
         <p>Quer tirar a sua habilitação paraguaia também? Nós cuidamos disso para você.</p>
-        <a class="more wa" href="https://wa.me/5562996191065" data-msg="Olá! Tenho interesse em tirar a CNH paraguaia. Pode me orientar?" data-where="card-cnh">Quero este serviço <span aria-hidden="true">→</span></a>
+        <a class="more wa" href="https://wa.me/595993375460" data-msg="Olá! Tenho interesse em tirar a CNH paraguaia. Pode me orientar?" data-where="card-cnh">Quero este serviço <span aria-hidden="true">→</span></a>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M2.500 21h19M9 21v-6h6v6M9 11h.01M15 11h.01"/></svg></div>
         <h3>Empresa e RUC</h3>
         <p>Abra sua empresa no Paraguai e crie o seu RUC, o equivalente ao CNPJ brasileiro.</p>
-        <a class="more wa" href="https://wa.me/5562996191065" data-msg="Olá! Tenho interesse em abrir uma empresa no Paraguai (RUC). Pode me orientar?" data-where="card-ruc">Quero este serviço <span aria-hidden="true">→</span></a>
+        <a class="more wa" href="https://wa.me/595993375460" data-msg="Olá! Tenho interesse em abrir uma empresa no Paraguai (RUC). Pode me orientar?" data-where="card-ruc">Quero este serviço <span aria-hidden="true">→</span></a>
       </article>
       <article class="card reveal">
         <div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v8M9.500 10v8M14.500 10v8M19 10v8M3 21h18"/></svg></div>
         <h3>Conta bancária</h3>
         <p>Abrimos sua conta no Paraguai e acompanhamos você pessoalmente na agência bancária.</p>
-        <a class="more wa" href="https://wa.me/5562996191065" data-msg="Olá! Tenho interesse em abrir uma conta bancária no Paraguai. Pode me orientar?" data-where="card-banco">Quero este serviço <span aria-hidden="true">→</span></a>
+        <a class="more wa" href="https://wa.me/595993375460" data-msg="Olá! Tenho interesse em abrir uma conta bancária no Paraguai. Pode me orientar?" data-where="card-banco">Quero este serviço <span aria-hidden="true">→</span></a>
       </article>
     </div>
   </div>
@@ -383,7 +376,7 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
       <li class="step reveal"><div class="num" aria-hidden="true">4</div><div><h3>Suporte do início ao fim</h3><p>Da chegada ao Paraguai até a entrega dos seus documentos, você conta com a nossa equipe.</p></div></li>
     </ol>
     <div class="cta-row">
-      <a class="btn btn-gold btn-lg wa" href="https://wa.me/5562996191065" data-msg="Olá! Entendi como funciona e quero começar meu processo no Paraguai." data-where="how">Quero começar meu processo</a>
+      <a class="btn btn-gold btn-lg wa" href="https://wa.me/595993375460" data-msg="Olá! Entendi como funciona e quero começar meu processo no Paraguai." data-where="how">Quero começar meu processo</a>
     </div>
   </div>
 </section>
@@ -427,11 +420,15 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
       <p>Registros de clientes e da nossa equipe na Dirección Nacional de Migraciones, no Paraguai.</p>
     </div>
     <div class="shots">
-      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/cedula-1.jpg" alt="Dois clientes mostrando a cédula paraguaia na entrada da Dirección Nacional de Migraciones"><figcaption>Cédula paraguaia em mãos</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-1.jpg" alt="Equipe da GM Advocacia na Imigração do Paraguai"><figcaption>Equipe presente na Imigração</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-3.jpg" alt="Advogado da GM Advocacia com parceiros paraguaios em frente à Imigração"><figcaption>Acompanhamento com parceiros locais</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-2.jpg" alt="Equipe da GM Advocacia na entrada da Direção Nacional de Migrações do Paraguai"><figcaption>Entrada do processo</figcaption></figure>
-      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/cedula-2.jpg" alt="Clientes felizes com a cédula paraguaia recém-emitida"><figcaption>Mais um processo concluído</figcaption></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-aduana.jpg" alt="Equipe da GM Advocacia entrando no Paraguai pela Aduana"></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-cataratas.jpg" alt="Cliente foi ao Paraguai dar entrada na documentação paraguaia e visitou as Cataratas"></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-maquila.jpg" alt="Casal brasileiro com o Paraguai no coração e incentivos fiscais da Lei de Maquila"></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-migraciones-trabalho.jpg" alt="Advogado dando entrada na Carteira para Residência Temporária na Migraciones"></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-migraciones-empresarios.jpg" alt="Três empresários brasileiros dando entrada na Migraciones para a residência temporária"></figure>
+      <figure class="reveal post"><img loading="lazy" width="1000" height="1000" src="assets/post-empresa-caminito.jpg" alt="Levando brasileiros para abrir empresa no Paraguai"></figure>
+      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-1.jpg" alt="Equipe da GM Advocacia na Imigração do Paraguai"></figure>
+      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-3.jpg" alt="Advogado da GM Advocacia com parceiros paraguaios em frente à Imigração"></figure>
+      <figure class="reveal"><img loading="lazy" width="900" height="1200" src="assets/equipe-2.jpg" alt="Equipe da GM Advocacia na entrada da Direção Nacional de Migrações do Paraguai"></figure>
     </div>
   </div>
 </section>
@@ -483,25 +480,25 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
     <div class="rule" style="margin-inline:auto"></div>
     <h2>Venha para cá. O que ainda está <em>esperando?</em></h2>
     <p>Fale com a nossa equipe, conheça os pacotes de serviços e dê o primeiro passo para regularizar a sua documentação no Paraguai.</p>
-    <a class="btn btn-wa btn-lg wa" href="https://wa.me/5562996191065" data-msg="Olá! Quero conferir os pacotes de serviços da GM Advocacia para o Paraguai." data-where="final"><svg aria-hidden="true"><use href="#wa"/></svg><span>Chamar no WhatsApp<span class="hide-sm"> · (62) 99619-1065</span></span></a>
+    <a class="btn btn-wa btn-lg wa" href="https://wa.me/595993375460" data-msg="Olá! Quero conferir os pacotes de serviços da GM Advocacia para o Paraguai." data-where="final"><svg aria-hidden="true"><use href="#wa"/></svg><span>Chamar no WhatsApp<span class="hide-sm"> · +595 993 375460</span></span></a>
   </div></div>
 </section>
 
 <footer>
   <div class="wrap">
     <img src="assets/logo.png" alt="Glayson Moreira Advogado" width="943" height="580" loading="lazy">
-    <p>GM Advocacia · <a href="https://gmescritorioadvocacia.com.br/" target="_blank" rel="noopener">gmescritorioadvocacia.com.br</a> · WhatsApp <a class="wa" href="https://wa.me/5562996191065" data-msg="Olá! Vim pelo site da GM Advocacia." data-where="footer">(62) 99619-1065</a></p>
+    <p>GM Advocacia · <a href="https://gmescritorioadvocacia.com.br/" target="_blank" rel="noopener">gmescritorioadvocacia.com.br</a> · WhatsApp <a class="wa" href="https://wa.me/595993375460" data-msg="Olá! Vim pelo site da GM Advocacia." data-where="footer">+595 993 375460</a></p>
     <p style="margin-top:6px">© <span id="y">2026</span> Todos os direitos reservados.</p>
   </div>
 </footer>
 
 <!-- Botões fixos -->
-<a class="fab wa" href="https://wa.me/5562996191065" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="fab" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg><span>Fale conosco</span></a>
-<div class="sticky"><a class="btn btn-wa btn-lg btn-block wa" href="https://wa.me/5562996191065" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="sticky"><svg aria-hidden="true"><use href="#wa"/></svg>Falar no WhatsApp agora</a></div>
+<a class="fab wa" href="https://wa.me/595993375460" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="fab" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg><span>Fale conosco</span></a>
+<div class="sticky"><a class="btn btn-wa btn-lg btn-block wa" href="https://wa.me/595993375460" data-msg="Olá! Gostaria de saber mais sobre a assessoria jurídica no Paraguai." data-where="sticky"><svg aria-hidden="true"><use href="#wa"/></svg>Falar no WhatsApp agora</a></div>
 
 <script>
 (function(){
-  var PHONE='5562996191065';
+  var PHONE='595993375460';
   var qs=new URLSearchParams(location.search);
   var src=qs.get('utm_source')||qs.get('src')||'';
   var camp=qs.get('utm_campaign')||'';
@@ -545,6 +542,19 @@ footer .legal{max-width:700px;margin:14px auto 0;font-size:.78rem;color:#80867a}
   }else{
     document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
   }
+  var lb=document.createElement('div');lb.className='lightbox';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');
+  lb.innerHTML='<button type="button" aria-label="Fechar">&times;</button><img alt="">';
+  document.body.appendChild(lb);
+  var lbImg=lb.querySelector('img');
+  function closeLb(){lb.classList.remove('open');document.body.style.overflow=''}
+  document.querySelectorAll('.shots figure').forEach(function(f){
+    f.tabIndex=0;f.setAttribute('role','button');
+    function open(){var i=f.querySelector('img');lbImg.src=i.currentSrc||i.src;lbImg.alt=i.alt;lb.classList.add('open');document.body.style.overflow='hidden'}
+    f.addEventListener('click',open);
+    f.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+  });
+  lb.addEventListener('click',closeLb);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
 })();
 </script>
 </body>
